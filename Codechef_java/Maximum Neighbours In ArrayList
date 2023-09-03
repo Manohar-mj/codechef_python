@@ -1,0 +1,15 @@
+public static ArrayList<Integer> maxNeighbour(ArrayList<Integer>arr)
+{
+    //Your code here
+    ArrayList<Integer> al=new ArrayList<>();
+    
+    for(int i=0;i<arr.size()-1;i++){
+        if(arr.get(i)<arr.get(i+1)){
+            al.add(arr.get(i+1));
+        }
+        else{
+            al.add(arr.get(i));
+        }
+    }
+    return al;
+}
