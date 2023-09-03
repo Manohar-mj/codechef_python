@@ -1,0 +1,24 @@
+Example 1:
+
+Input:
+N = 4
+arr = [1, 2, 3, 4]
+
+Output:
+1 2 3 4
+
+Explanation:
+Simply insert into ArrayList and return it.
+
+
+
+
+public static ArrayList<Integer> fillArrayList(int arr[], int n)
+{
+    //Your code here
+    ArrayList<Integer> al =new ArrayList<>();
+    for(int i=0;i<n;i++){
+        al.add(arr[i]);
+    }
+    return al;
+}
